@@ -474,8 +474,9 @@
 
 
     <!-- Modals-->
+    <!--first__modal-->
 
-    <div class="modal" style="display:none;">
+    <div class="modal" style="display: none;">
         <div class="modal__dialog">
 
             <button class="modal__close" type="button">
@@ -527,8 +528,8 @@
     </div><!--/.modal-->
 
 
-
-    <div class="modal">
+    <!--second__modal-->
+    <div class="modal" style="display: none;">
         <div class="modal__dialog">
 
             <button class="modal__close" type="button">
@@ -536,7 +537,7 @@
             </button>
 
             <div class="modal__content">
-                <h3 class="model__title"> Resume</h3>
+                <h3 class="modal__title text-center"> Resume</h3>
 
                 <div class="text-center">
                     <a class="btn btn--thin" href="#">DOWNLOAD PDF</a>
@@ -608,7 +609,7 @@
 
                     </div>
                     <div class="timeline__col timeline__col--right">
-                        <h4 class="timeline__tittle">
+                        <h4 class="timeline__title">
                             EDUCATION
                         </h4>
 
@@ -624,7 +625,7 @@
                             <div class="timeline__poisition">LA Collage of Art, USA</div>
                         </div>
 
-                        <h4 class="timeline__tittle">
+                        <h4 class="timeline__title">
                             Sills
                         </h4>
 
@@ -720,8 +721,66 @@
 
             </div><!--/.modal__content-->
 
-            
+        </div><!-- /.modal__dialog-->
 
+    </div><!--/.modal-->
+
+
+    <!--third__modal-->
+
+    <div class="modal" style="display: none;">
+        <div class="modal__dialog modal__dialog--sm">
+        
+            <button class="modal__close" type="button">
+                <img src="assets/images/cancel.svg" alt="">
+            </button>
+
+                <div class="contact">
+                    <div class="contact__left">
+                        <h3 class="modal__title modal__title--third__modal"> LET'S TALK!</h3>
+                        <div class="modal__subtitle">
+                            CALL ME OR SEND ME A REQUEST
+                        </div>
+
+                        <ul class="conatct__info">
+                            <li>
+                                <img src="assets/images/phone-call.svg" alt="" width="20">
+                                (200) 100 3000
+                            </li>
+                            <li>
+                                <img src="assets/images/email.svg" alt="" width="20">
+                                designer@ui43.com
+                            </li>
+                        </ul>
+
+                        <form class="form" action="/" method="post"> 
+                            <div class="form__group">
+                                <label for="" class="form__label"> Adress e-mail</label>
+                                <input class="form__input" type="text" placeholder="Adress e-mail" id="input__id">
+                            </div>
+
+                            <div class="form__group">
+                                <label for="input-text" class="form__label"> Request</label>
+                                <textarea name="input-text"  id="input__id"
+                                placeholder="Type your request..." class="form__textarea">
+
+                                </textarea>
+                            </div>
+
+                            <div class="text-right">
+                                <button class="btn" type="button">send</button>
+                            </div>
+                        </form>
+
+                    </div> <!--/.contact__left-->
+
+                    
+                    <div class="contact__right">
+                        
+                    </div><!--/.conatct__right-->
+
+                </div>  <!--/.contact-->
+        
         </div><!-- /.modal__dialog-->
     </div><!--/.modal-->
 
