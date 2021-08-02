@@ -35,7 +35,7 @@
                     <a class="nav__link" href="#">ABOUT ME</a>
                     <a class="nav__link" href="#">BLOG</a>
                     <a class="nav__link" href="#">contact</a>
-                    <a class="nav__link nav__link--btn" href="#">HIRE ME</a>
+                    <a class="nav__link nav__link--btn" href="#" data-modal="#modal_hire-me">HIRE ME</a>
 
                 </nav>
             </div>
@@ -78,8 +78,8 @@
                         </a>
                     </div>
 
-                    <a class="btn" href="#">hire me</a>
-                    <button class="btn" type="button" href="#">see my resume</button>
+                    <a class="btn" href="#" data-modal="#modal_hire-me">hire me</a>
+                    <button class="btn" type="button" href="#" data-modal="#modal_resume">see my resume</button>
                </div>
            </div> <!-- /.intro__inner-->
 
@@ -99,10 +99,10 @@
                 <a class="works__nav-link" href="#" data-filter="interaction">Interaction</a>
             </div>
 
-            <div class="portfolio">
+            <div class="portfolio" id="portfolio">
 
                 <div class="portfolio__col" data-cat="app">
-                    <div class="work">
+                    <div class="work" data-modal="#modal_project_1">
                         <img class="work__image" src="https://via.placeholder.com/370x300" alt="">
                         <div class="work__content">
                             <div class="work__cat">category:app</div>
@@ -115,7 +115,7 @@
                 </div>
 
                 <div class="portfolio__col" data-cat="website">
-                    <div class="work">
+                    <div class="work" data-modal="#modal_project_1">
                         <img class="work__image" src="https://via.placeholder.com/370x300" alt="">
                         <div class="work__content">
                             <div class="work__cat">category:website</div>
@@ -128,7 +128,7 @@
                 </div>
 
                 <div class="portfolio__col" data-cat="interaction">
-                    <div class="work">
+                    <div class="work" data-modal="#modal_project_1">
                         <img class="work__image" src="https://via.placeholder.com/370x300" alt="">
                         <div class="work__content">
                             <div class="work__cat">category:interection</div>
@@ -141,7 +141,7 @@
                 </div>
 
                 <div class="portfolio__col" data-cat="website">
-                    <div class="work">
+                    <div class="work" data-modal="#modal_project_1">
                         <img class="work__image" src="https://via.placeholder.com/370x300" alt="">
                         <div class="work__content">
                             <div class="work__cat">category:website</div>
@@ -154,7 +154,7 @@
                 </div>
 
                 <div class="portfolio__col" data-cat="interaction">
-                    <div class="work">
+                    <div class="work" data-modal="#modal_project_1">
                         <img class="work__image" src="https://via.placeholder.com/370x300" alt="">
                         <div class="work__content">
                             <div class="work__cat">category:interection</div>
@@ -168,7 +168,7 @@
 
 
                 <div class="portfolio__col" data-cat="app">
-                    <div class="work">
+                    <div class="work" data-modal="#modal_project_1">
                         <img class="work__image" src="https://via.placeholder.com/370x300" alt="">
                         <div class="work__content">
                             <div class="work__cat">category:app</div>
@@ -181,8 +181,8 @@
                 </div>
 
 
-                <div class="portfolio__col">
-                    <div class="work">
+                <div class="portfolio__col" data-cat="app">
+                    <div class="work" data-modal="#modal_project_1">
                         <img class="work__image" src="https://via.placeholder.com/370x300" alt="">
                         <div class="work__content">
                             <div class="work__cat">category</div>
@@ -195,8 +195,8 @@
                 </div>
 
 
-                <div class="portfolio__col">
-                    <div class="work">
+                <div class="portfolio__col" data-cat="interaction">
+                    <div class="work" data-modal="#modal_project_1">
                         <img class="work__image" src="https://via.placeholder.com/370x300" alt="">
                         <div class="work__content">
                             <div class="work__cat">category</div>
@@ -209,8 +209,8 @@
                 </div>
 
 
-                <div class="portfolio__col">
-                    <div class="work">
+                <div class="portfolio__col" data-cat="website">
+                    <div class="work" data-modal="#modal_project_1">
                         <img class="work__image" src="https://via.placeholder.com/370x300" alt="">
                         <div class="work__content">
                             <div class="work__cat">category</div>
@@ -477,16 +477,23 @@
     <!-- Modals-->
     <!--first__modal-->
 
-    <div class="modal" style="display: none;">
+    <div class="modal" id="modal_project_1">
         <div class="modal__dialog">
 
-            <button class="modal__close" type="button">
+            <button class="modal__close" type="button" data-close>
                 <img src="assets/images/cancel.svg" alt="">
             </button>
 
             <div class="modal-work">
                 <div class="modal-work__preview">
-                    <img class="modal-work__photo" src="https://via.placeholder.com/790x900" alt="">
+                    <div id="worksSlider">
+                        <div>
+                            <img class="modal-work__photo" src="https://via.placeholder.com/790x900" alt="">
+                        </div>
+                        <div>
+                            <img class="modal-work__photo" src="https://via.placeholder.com/790x900/333" alt="">
+                        </div>
+                    </div>
                 </div>
                 <div class="modal-work__content">
 
@@ -530,10 +537,10 @@
 
 
     <!--second__modal-->
-    <div class="modal" style="display: none;">
+    <div class="modal" id="modal_resume">
         <div class="modal__dialog">
 
-            <button class="modal__close" type="button">
+            <button class="modal__close" type="button" data-close>
                 <img src="assets/images/cancel.svg" alt="">
             </button>
 
@@ -729,10 +736,10 @@
 
     <!--third__modal-->
 
-    <div class="modal" style="display: none;">
+    <div class="modal" id="modal_hire-me">
         <div class="modal__dialog modal__dialog--sm">
         
-            <button class="modal__close" type="button">
+            <button class="modal__close" type="button" data-close>
                 <img src="assets/images/cancel.svg" alt="">
             </button>
 
@@ -787,6 +794,8 @@
 
     <!--JS-->
 
+
+    <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/app.js"></script>
 
 </body>
