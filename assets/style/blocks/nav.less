@@ -2,11 +2,22 @@
 
 .nav{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     height: 100%;
 
     @media @mobile{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        z-index: 1000;
+        width: 100%;
+
         display: none;
+
+        &.show{
+           display: flex; 
+        }
     }
 }
 
@@ -56,5 +67,10 @@
             background-color: @black;
             color: @white;
         }
+    }
+
+    @media @mobile{
+        width: 100%;
+        margin-left: 0;
     }
 }
