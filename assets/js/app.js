@@ -37,6 +37,7 @@ $(function(){
 
     modalCall.on('click', function(event){
         event.preventDefault();
+
         let $this = $(this);
         let modalId = $this.data('modal');
 
@@ -77,7 +78,7 @@ $(function(){
         });
 
         setTimeout(function(){
-            $(this).removeClass('show');
+            $this.removeClass('show');
             $('body').removeClass('no-scroll')
         }, 200);
     });

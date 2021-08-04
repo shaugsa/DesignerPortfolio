@@ -2,6 +2,10 @@
 
 .modal-work{
     display: flex;
+
+    @media @tablet{
+        height: 519px;
+    }
 }
 
 .modal-work__preview{
@@ -23,10 +27,18 @@
     position: relative;
     width: 35%;
     padding: 3.4rem 6.6rem 1rem 1.73rem;
+
+    @media @tablet{
+        padding: 1rem;
+    }
 }
 
 .modal-work__header{
     margin-bottom: 2.2rem;
+
+    @media @tablet{
+        margin-bottom: 1rem;
+    }
 }
 
 .modal-work__title{
@@ -36,6 +48,12 @@
     color: @black;
     font-weight: 700;
     text-transform: uppercase;
+
+    @media @tablet{
+        margin-top: 3rem;
+        font-size: 1.5rem;
+    }
+
 }
 
 .modal-work__info{
@@ -50,12 +68,18 @@
 
 .modal-work__client{
     margin-bottom: 2.2rem;
+
+    @media @tablet{
+        margin-bottom: 1rem;
+    }
 }
 
 .modal-work__client-title{
     font-size: 1.06rem;
     color: @black;
     font-weight: 700;
+
+    margin-bottom: 1rem;
 }
 
 .modal-work__client-company{
