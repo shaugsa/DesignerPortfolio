@@ -25,3 +25,18 @@ img{
 .hide{
     display: none;
 }
+
+.hide-footer{
+    display: none;
+
+    @media @mobile{
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: .4rem;
+    }
+
+    & .slickNext{
+        margin-left: 136px;
+    }
+}

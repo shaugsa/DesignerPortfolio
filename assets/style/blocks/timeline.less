@@ -22,7 +22,15 @@
     }
 
     @media @tablet{
-    margin: 1rem 0;  
+        margin: 1rem 0;  
+    }
+
+    @media @mobile{
+        flex-direction: column;
+
+        &:before{
+            display: none;
+        }
     }
 }
 
@@ -32,10 +40,25 @@
     &--left{
         text-align: right;
         padding-right: 3.2rem;
+
+        @media @mobile{
+            text-align: none;
+        }
     }
 
     &--right{
         padding-left: 3.2rem;
+
+        @media @mobile{
+            width: 100%;
+        }
+    }
+
+    @media @mobile{
+        background-color: #fff;
+        padding: 0;
+        width: 100%;
+        text-align: left;
     }
 }
 
@@ -44,6 +67,10 @@
 
     &:last-child{
         margin-bottom: 0;
+    }
+
+    @media @mobile{
+        margin-bottom: .5rem;
     }
 }
 
@@ -54,6 +81,10 @@
     color: @black;
     font-weight: 700;
     text-transform: uppercase;
+
+    @media @mobile{
+        margin-bottom: 1rem;
+    }
 }
 
 .timeline__date{

@@ -39,6 +39,10 @@
         max-width: 700px;
         max-height: 1000px;
     }
+
+    @media @mobile{
+        max-height: 1500px;
+    }
 }
 
 .modal__close{
@@ -60,12 +64,22 @@
     &:hover{
         transform: rotate(90deg);
     }
+
+    @media @mobile{
+        width: 23px;
+        top: 0;
+    }
+
 }
 
 .modal__content{
     padding: 5rem 1rem;
 
     @media @tablet{
+        padding: 1rem;
+    }
+
+    @media @mobile{
         padding: 1rem;
     }
 }
@@ -84,6 +98,11 @@
 
     @media @tablet{
         margin-bottom: 1rem;
+    }
+
+    @media @mobile{
+        font-size: 1.5rem;
+        margin-bottom: .5rem;
     }
 }
 
